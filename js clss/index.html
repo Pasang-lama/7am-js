@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css  ">
+
+</head>
+<body>
+    <header>
+        <a class="logo" href="">logo</a>
+        <ul id="menu-wrapper">
+            <button class="close-btn" id="closebtn">Close</button>
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">News and Articles</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+        <button class="button" id="side-nav-open">Menu</button>
+    </header>
+
+    <script>
+        var openbtn = document.getElementById("side-nav-open")
+        var closebtn = document.getElementById("closebtn")
+        var sidenav = document.getElementById("menu-wrapper")
+        openbtn.addEventListener("click", function(){
+            sidenav.classList.add("open")
+        })
+        closebtn.addEventListener("click", function(){
+            sidenav.classList.remove("open")
+        })
+    </script>
+</body>
+</html>
